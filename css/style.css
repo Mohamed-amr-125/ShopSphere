@@ -1,0 +1,143 @@
+
+/* Default height for small devices */
+#intro-example {
+height: 400px;
+}
+
+/* Height for devices larger than 992px */
+@media (min-width: 992px) {
+#intro-example {
+    height: 600px;
+}
+}
+
+.headstar{
+    background-image: url("../media/headerimg.jpg");
+    background-size: cover;
+}
+
+.headfood{
+    background-image: url("../media/headfood1.jpg");
+    background-size: cover;
+    background-position: bottom;
+}
+
+.headbeauty{
+    background-image: url("../media/headmakeup.jpg");
+    background-size: cover;
+    background-position: top;
+}
+
+.headclothes{
+    background-image: url("../media/headclothes.jpg");
+    background-size: cover;
+}
+
+.headwatches{
+    background-image: url("../media/headwatche.jpg");
+    background-size: cover;
+}
+
+.headfurniture{
+    background-image: url("../media/headfurniture.jpg");
+    background-size: cover;
+}
+
+.mainstart{
+    background-color: rgba(251, 251, 251, 0.15);
+}
+
+.mainend{
+    background-color: rgba(251, 251, 251, 0.15);
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+    background-color: #fff;
+  }
+
+  .table {
+    width: 100%;
+    table-layout: fixed; /* يجعل عرض الأعمدة ثابتًا */
+}
+
+.table td, .table th {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table img {
+    max-width: 100px;
+    height: auto;
+}
+
+.operation-buttons {
+    display: flex;
+    gap: 5px; /* مسافة بين الأزرار */
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .operation-buttons {
+        flex-direction: column; /* تجعل الأزرار فوق بعضها على الشاشات الصغيرة */
+    }
+
+    .table img {
+        max-width: 60px; /* تصغير الصور للشاشات الصغيرة */
+    }
+}
+
+
+.btn-payment {
+    width: auto; /* يجعل الزر بعرض العمود */
+    margin: 0 auto; /* توسيط الزر أفقياً */
+    padding: 10px 20px;
+    display: block; /* لجعل الـ margin يعمل على الزر */
+}
+
+@media (max-width: 576px) {
+    .btn-payment {
+        width: 100%; /* عرض الزر بعرض الشاشة */
+        font-size: 14px; /* تقليل حجم الخط */
+        padding: 10px; /* تكبير المسافة داخل الزر */
+    }
+}
+
+  
+.btn-delete-all {
+    width: 50%; /* يجعل الزر بعرض العمود */
+    padding: 10px; /* يضمن أن المسافة الداخلية متساوية */
+    display: block; /* يجعل الزر كتلة مستقلة */
+    margin: 0 auto;
+}
+
+@media (max-width: 576px) {
+    .btn-delete-all {
+        width: 90%; /* يضبط عرض الزر ليكون مناسبًا للشاشات الصغيرة */
+        margin: 0 auto; /* يضع الزر في منتصف العمود */
+        font-size: 14px; /* تقليل حجم النص قليلاً */
+    }
+}
+
+.card img {
+    width: 100%; /* يضمن أن الصور متجاوبة دائمًا */
+    height: auto; /* يجعل الصور تتناسب تلقائيًا مع العرض */
+}
+
+@media (min-width: 992px) {
+    .card img {
+        height: 450px; /* يعيد ارتفاع الصور للشاشات الكبيرة */
+    }
+}
+
+@media (max-width: 768px) {
+    .card img {
+        height: 350px;
+        width: 100%;
+    }
+    .card {
+        margin-bottom: 20px;
+    }
+}
